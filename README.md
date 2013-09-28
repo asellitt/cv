@@ -1,4 +1,4 @@
-resume
+asellitt.github.io
 ======
 
-Version controlled resume
+Landing page or asellitt.com
