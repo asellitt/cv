@@ -1,0 +1,81 @@
+==================================================================
+https://keybase.io/asellitt
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://asellitt.com
+  * I am asellitt (https://keybase.io/asellitt) on keybase.
+  * I have a public key with fingerprint 5E9F 05DA 4367 088A ACC3  4CB1 E055 3411 934B B060
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.3"
+        },
+        "key": {
+            "fingerprint": "5e9f05da4367088aacc34cb1e0553411934bb060",
+            "host": "keybase.io",
+            "key_id": "E0553411934BB060",
+            "uid": "30e21d0b216a58bbf70430e7da367f00",
+            "username": "asellitt"
+        },
+        "merkle_root": {
+            "ctime": 1418783077,
+            "hash": "5f1f4929ad6d2f56f10f117a50dc867a7ef592c1f1a8a985d4fa9dcbf76b7743d4af8df32404b553bfa23d329cc556e078325b6ebc2f29f5e86c21e12ada5957",
+            "seqno": 111154
+        },
+        "service": {
+            "hostname": "asellitt.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1418783207,
+    "expire_in": 157680000,
+    "prev": "f9a8bf21b3b0c8ab6a7e72d24447fbb766139fd7fb2a9f63056e2e33c9cd9e51",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG/MacGPG2 v2.0.22 (Darwin)
+
+owFdkn1QVFUYxpcNFCgmGRtBLGCWiBCB+/0BIY0NWrY6EhjIxqzn3HsuXFj2LrvL
+8jXogKKC/gEjDKNA1kgUCkJZTRlBWooVxKgzgaNUwiQhijJMoyll5xKN2fnrfPzO
+8z7Pe05dwBMGo9cvW5nAg6/3bPf6fgoa0uumJstNUJNLTQnlJsmmIrtbn9lBATIl
+mPJRKQQuFKdq4XZNRnF5rvBFZo3Jg5wuVbNjiojj42hTxRod1y8rqj0HOR1OVdcy
+sUhUCFYGDM3xhCAAIEk0I0ESESxLMyQp0gyEBEdgyVzN5X6sqmlB06rKeDflEb9u
+3T980cIBTSCKlAlIkRxgBQgVnmDwHi8DXFEhFkAXci5GwsI2m+p2634LkDPfhqxO
+TVsILblVHSEZUuAFmuB57Ai4cvUMCqkwIiUCmZMpheUUklBIkgcsIUsCxwMeKaxI
+SaRCAgGIAiszChBlCVvhIM8ztMwARZAVmmIIBuIYUAEULdOUKEksyyECl6NYyCEo
+UQolKiwSOIkiEUkBGbAiy+MILlRo17A5PFimQl87PaqEdN962/6XLk7SCvAlh1Nz
+a5Jmwye5brcjQQ/tLnXoZDGC1q5FEStU7TJ+tP++KonRxxtCEbghqMShOpFV1QmW
+5wQCD70O8mBNRQQCVCgS0pCQBAA53BiekimGYXgFQp7jSFpUZDyngKhwNIGzU4im
+JVGSRcSSj2LS2CfIwZIuNccO3EVOZKqoMT7rbfAyGpb4GPVva/D3W/bvX74Tu8ww
+uDEsxGjtCG52nC8rHBkIDF5568tv829/cWtorL7R8sm12KQVp+/VPyyrFTq0uzUl
+a7dsbj/V27TL9FVeccpPltKMZM9K88a99VUzV87meZa07Zuvgu96fs5+NXlPenlo
+6V/B3KcFFVsiow4F+NGJ8cGplqbmYWbs5tkzldLRqdkMn++mC4nl5LYIuSzIWNLj
+G28nj2XNXdytvjV+Iq2ViTiWaQ6Ro0rSNkUlnTx6yvxZovX+BVSd23eO39n8W+sf
+KfMjXx84fT7El0kJbx8YLoiI33Byf13L7/u3u6ufYzqqbnf3Rz1gPrz4xpGaloqG
+w50TPnZL5VDrMHxmdnhiq/dlYfr544MHUiM2LV99c7Jk/fy4z3TnzOWC64SXWbj0
+wuDugfuJYSJ3d2BuianzvR1FXblXK3MmB1Ir/6y/c6Exs9XdG1M7MjgVH7A05Ie5
+mNmdD198arzRf6Jl5qV22vZkOkG8fM+sZUWHdcWHwrSg/Grj0w+Ce2ICMnf1UsWh
+0x8ne/f1B9o3UycmRw9+VME2vJ/g+2tsw5lzDdezRr3megojOzi/MktUwt5VQUP+
+oL81u60J1vp9Xpb9zTvZ/kci466JG0ab+9Y2L439oKRvJCV9jznkx5RDV2NurBhi
+CpOydjS/knHjNS5/3FzjV/d2d9u2aIstujst9NKq3gbuzcOr94VfOd449jc=
+=kHw+
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/asellitt
+
+==================================================================
