@@ -122,6 +122,10 @@
       top: 20px;
     }
 
+    .norender {
+      display: none;
+    }
+
     @media print {
       body {
         background: #ffffff;
@@ -186,6 +190,10 @@
         display: none;
       }
 
+      .print {
+        display: inline;
+      }
+
       h2 {
         background-image: url('../img/bullet-large-red.png');
       }
@@ -212,9 +220,6 @@
               <li><a href="#edu">Education & Certifications</a></li>
               <li><a href="#int">Interests</a></li>
               <li><a href="#ref">References</a></li>
-              <li>&nbsp;</li>
-              <li><a href="javascript:window.print();">Print</a></li>
-              <li><a href="Resume.pdf">Offline</a></li>
             </ul>
           </div>
 
@@ -222,8 +227,8 @@
         <div id="content" class="span9">
           <div id="con">
             <h1>ANTHONY SELLITTI</h1>
-            <h5>asellitt.com</h5>
-            <h5>anthony.resume at asellitt dot com</h5>
+            <h5 class="norender print">0423 600 123</h5>
+            <h5 class="norender print">anthony.resume@asellitt.com</h5>
           </div>
 
           <div id="sum" class="well">
