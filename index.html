@@ -19,9 +19,6 @@
   <!-- Main Styles -->
   <link rel="stylesheet" href="stylesheets/layout.css">
 
-  <!-- Styles for Preview -->
-  <link rel="stylesheet" href="preview/jquery.slidePanel.css">
-
   <!-- Favicons ================================================== -->
   <link rel="shortcut icon" href="images/favicon.ico">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
@@ -522,23 +519,6 @@
 
       $('#cbp-qtrotator').cbpQTRotator({ interval: 15000 });
 
-    });
-  </script>
-
-  <!-- js for Preview -->
-  <script src="preview/jquery.slidePanel.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $('#style_switcher_panel').slidePanel({
-        triggerName: '#trigger',
-        triggerTopPos: '100px',
-        panelTopPos: '100px'
-      });
-
-      $('.precy').click(function () {
-        var bg = $(this).attr('title');
-        $('body').css("background-image", bg)
-      });
     });
   </script>
 
