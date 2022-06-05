@@ -1,177 +1,562 @@
-<html>
-   <head>
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-      <style>
-         body {
-            background-image: url('img/bg.jpg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-         }
-         
-         header {
-            background-image: url('img/header.png');
-            width: 860px;
-            height: 200px;
-            margin-bottom: 20px;
-            margin-top: 20px;
-            margin: 0px auto;
-         }
-         
-         a {
-            color: #020075;
-         }
-         
-         p {
-         }  
-         
-         #wrapper {
-            width: 1000px;
-            margin: 0 auto;
-         }
-         
-         #header {
-            margin-top: 20px;
-            margin-bottom: 20px;
-         }
-         
-         #content {
-            height: 400px;
-            background-image: url('img/codemonkey.png');
-            background-repeat: no-repeat;
-            background-position: bottom right;
-            border-right: 0;
-            border-bottom: 0;
-         }
-         
-         .page-header {
-            margin-right: 150px;
-            background-image: url('img/bullet-large.png');
-            background-repeat: no-repeat;
-            background-position: 0 6px;
-            padding-left: 30px;
-         }
-         
-         .image-wrap1 {
-            padding-right: 135px;
-         }
-         
-         .image-wrap2 {
-            padding-right: 150px;
-         }
-         
-         .image-wrap3 {
-            padding-right: 200px;
-         }
-         
-         .image-wrap4 {
-            padding-right: 220px;
-         }
-         
-         #content ul{
-            list-style:none;
-            margin-bottom: 0;
-            padding: 0;
-            padding-right: 160px;
-         }
-         
-         #content ul li{
-            margin: .25em 0;
-            padding-left: 25px;
-            background-image: url('img/bullet-medium.png');
-            background-repeat: no-repeat;
-            background-position: 0px 0px; 
-         }
-         
-         .center {
-            text-align: center;
-         }
-         
-         .social {
-         }
-         
-         .button {
-            width: 30px;
-            height: 30px;
-            background-repeat: no-repeat;
-            display: inline-block;
-            padding-left: 10px;
-			background-size:30px 30px;
-         }
-         
-         .blogger {
-            background-image: url('img/blogger.png');
-         }
-         
-         .github {
-            background-image: url('img/github.png');
-         }
-         
-         .twitter {
-            background-image: url('img/twitter.png');
-         }
-         
-         .linkedin {
-            background-image: url('img/linkedin.png');
-         }
-		 
-		 .flickr {
-            background-image: url('img/flickr.png');
-         }
-         
-         .resume {
-            background-image: url('img/resume.png');
-         }
-      </style>
-      <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-   </head>
-   <body>
-      <div id="wrapper">
-         
-         <div id="header">
-            <a href="http://asellitt.com"/>
-               <header></header>
-            </a>
-         </div>
-         
-         <div class="container-fluid">
-            <div class="row-fluid">
-               <div class="span2"></div>
-               <div id="content" class="span8 well">
-                  <div class="page-header">
-                     <h1>Code Monkey Extraordinaire</h1>
-                  </div>
-                  <div>
-                     <p class="image-wrap1">I'm a professional developer with a keen interest in web technologies and problem solving (and also Transformers).</p>
-                     <p class="image-wrap2">In my spare time, I dabble in a mixture of things. My favourites include:</p>
-                     <p class="image-wrap2">
-                        <ul>
-                           <li>Mobile technologies, more specifically: Android.</li>
-                           <li>Rapid development frameworks, such as Rails.</li>
-                           <li>Embedded systems, including Raspberry Pi and Ardiuno.</li>
-                           <li>Home automation</li>
-                           <li>Photography</li>
-                        </ul>
-                     </p>
-                     <p class="image-wrap3">I also regulary attend meetups, such as RoRo, MelbJS, DevOps and DDD Melb (and the occational Code Hacker session with friends).</p>
-                  </div>
-               </div>
-               <div class="span2"></div>
-            </div>
-            <div class="row-fluid">
-               <div class="span2"></div>
-               <div class="span8 well center">
-                  <div class="social">You can find me here:</div>
-                  <a href="http://thoughts.asellitt.com" title="Blog"><div class="button blogger"></div></a>
-                  <a href="https://github.com/asellitt" title="Github"><div class="button github"></div></a>
-                  <a href="https://twitter.com/asellitt" title="Twitter"><div class="button twitter"></div></a>
-                  <a href="http://flickr.com/photos/asellitt" title="Flickr"><div class="button flickr"></div></a>
-                  <a href="http://www.linkedin.com/pub/anthony-sellitti/47/424/277" title="Linkedin"><div class="button linkedin"></div></a>
-                  <a href="resume/index.html" title="Resume"><div class="button resume"></div></a>
-               </div>
-               <div class="span2"></div>
-            </div>  
-         </div>
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs ================================================== -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Anthony Sellitti</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- CSS ================================================== -->
+  <link rel="stylesheet" href="stylesheets/skeleton.css">
+  <!-- qTip CSS file -->
+  <link rel="stylesheet" href="stylesheets/jquery.qtip.css">
+  <!-- Lightbox2 CSS file -->
+  <link href="stylesheets/lightbox.css" rel="stylesheet" />
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="stylesheets/layout.css">
+
+  <!-- Styles for Preview -->
+  <link rel="stylesheet" href="preview/jquery.slidePanel.css">
+
+  <!-- Favicons ================================================== -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+  <!-- JavaScript ================================================== -->
+  <!-- Modernizr -->
+  <script src="js/modernizr.custom.js" type="text/javascript"></script>
+
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+  <header>
+
+    <section class="menu">
+      <div class="container">
+        <div class="sixteen columns">
+          <!-- Navigation Menu -->
+          <div id="nav">
+            <ul class="navigation">
+              <li data-slide="1">
+                <h5>Home</h5>
+              </li>
+
+              <li data-slide="2">
+                <h5>About Me</h5>
+              </li>
+
+              <li data-slide="3">
+                <h5>Experience</h5>
+              </li>
+
+              <li data-slide="4">
+                <h5>Portfolio</h5>
+              </li>
+            </ul>
+          </div>
+          <!-- Navigation Menu / End -->
+        </div>
       </div>
-   </body>
+    </section>
+  </header>
+
+  <div class="wrapper">
+    <!-- Home Subpage =========================================== -->
+    <section class="slide" id="home" data-slide="1">
+      <div class="container">
+        <div class="sixteen columns">
+
+          <!-- Main Photo -->
+          <div class="portrait">
+            <img src="images/my_photo.jpg" alt="" class="tframe_1" />
+          </div>
+          <!-- End Main Photo -->
+
+          <!-- Main Title. -->
+          <div class="main_title">
+            <h1>Anthony Sellitti</h1>
+            <h4>Software Engineer</h4>
+          </div>
+          <!-- End Main Title -->
+
+          <!-- Social Icons. -->
+          <div class="social_icons">
+            <ul class="social">
+              <li>
+                <a class="tip" href="https://www.linkedin.com/in/asellitt" title="Linked In">
+                  <img src="images/social/linkedin.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a class="tip" href="https://github.com/asellitt/" title="Github">
+                  <img src="images/social/github.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a class="tip" href="https://twitter.com/asellitt" title="Twitter">
+                  <img src="images/social/twitter.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a class="tip" href="resume/index.html" title="CV">
+                  <img src="images/social/resume.png" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- End Social Icons -->
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Home Subpage -->
+
+    <!-- About Me Subpage =========================================== -->
+    <section class="slide" id="about_me" data-slide="2">
+      <div class="container">
+
+        <!-- Subpage Title -->
+        <div class="sixteen columns">
+          <div class="subpage_title">
+            <h2><span>About Me</span></h2>
+          </div>
+        </div>
+        <!-- End Subpage Title -->
+
+
+        <div class="eight columns">
+          <!-- About Me Main Information -->
+          <div class="block">
+            <h4>I'm a Software Engineer from Melbourne.</h4>
+            <p>
+              Over the the last decade, I've worked on some of Australia's largest online marketplaces, supporting over
+              1.2 billion requests per month. I've lead and delivered initiatives which have contributed to over 1
+              billion dollars of community earnings, and helped hundreds of thousands of customers find the assets they
+              need.
+            </p>
+          </div>
+          <!-- End About Me Main Information -->
+
+          <!-- My Skills Information -->
+          <div class="block">
+            <div class="skill_info clearfix">
+              <div class="block_title">
+                <h4><span>My Skills</span></h4>
+              </div>
+              <ul id="chart">
+                <li class="skill w100"><span>Problem Solving</span></li>
+                <li class="skill w90"><span>Technical Leadership</span></li>
+                <li class="skill w60"><span>Mentoring</span></li>
+                <li class="skill w100"><span>Backend Development</span></li>
+                <li class="skill w80"><span>Frontend Development</span></li>
+                <li class="skill w90"><span>Continuous Integration and Continuous Delivery</span></li>
+              </ul>
+            </div>
+          </div>
+          <!-- End My Skills Information -->
+        </div>
+
+        <div class="eight columns">
+          <!-- Personal info -->
+          <div class="block">
+            <div class="block_title">
+              <h4><span>Personal Info</span></h4>
+            </div>
+            <ul class="personal-info">
+              <li><span class="title">Name</span><span class="value">Anthony Sellitti</span></li>
+              <li><span class="title">Address</span><span class="value">Melbourne, Australia</span></li>
+              <li><span class="title">Employed</span><span class="value available">Looking for new opportunities</span>
+              </li>
+              <!-- if Freelance not available: change class to not_available (then color text = Red) -->
+            </ul>
+          </div>
+          <!-- End Personal Info -->
+
+          <!-- Testimonials info -->
+          <div class="block">
+            <div class="block_title">
+              <h4><span>Testimonials</span></h4>
+            </div>
+
+            <div id="cbp-qtrotator" class="cbp-qtrotator">
+
+              <div class="cbp-qtcontent">
+                <img src="images/testimonials/lindsay.png" alt="Lindsay" />
+                <blockquote>
+                  <p>
+                    Anthony gets results. In our time working together, I saw him grow from a circumspect mid-level
+                    developer to a highly capable, high impact senior developer. He brought significant financial
+                    systems expertise to building and scaling the Elements subscription flow – the main revenue
+                    generating flow of the product. He cares about his craft, and takes the long term view whenever
+                    writing code. He actively works to improve the teams' ways of working, and doesn't hesitate to tell
+                    it like it is. Working with Anthony is a breath of fresh air, and I can't wait to do so again.
+                  </p>
+                  <footer>Lindsay Holmwood</footer>
+                </blockquote>
+              </div>
+
+              <div class="cbp-qtcontent">
+                <img src="images/testimonials/emily.png" alt="Emily" />
+                <blockquote>
+                  <p>
+                    Anthony is an absolute superstar, and I've so enjoyed working with him. He brings with him such a
+                    wealth of knowledge and context, and an enthusiasm for just getting shit done. He feels comfortable
+                    to ask questions that challenge assumptions and is similarly comfortable having questions asked of
+                    him. Anthony steps up and helps when needed, even when he's thrown a curve ball or two!
+                  </p>
+                  <footer>Emily Koop</footer>
+                </blockquote>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Testimonials Info -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Subpage =========================================== -->
+    <section class="slide" id="resume" data-slide="3">
+      <div class="container">
+        <div class="sixteen columns">
+          <div class="subpage_title">
+            <h2><span>Experience</span></h2>
+          </div>
+        </div>
+
+        <!-- Employment Info -->
+        <div class="eight columns row">
+          <div class="block">
+            <div class="block_title">
+              <h4><span>Employment</span></h4>
+            </div>
+
+            <!-- Timeline Employment Info Container -->
+            <div class="eventsContainer clearfix">
+
+              <div class="eventsContent">
+                <h5><span>Oct 2021 - Jun 2022</span></h5>
+                <div class="event">
+                  <h5>Lead Engineer</h5>
+                  <div class="eventDetail">
+                    <p>
+                    </p>
+                    <h6>Envato</h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eventsContent">
+                <h5><span>Apr 2019 - Oct 2021</span></h5>
+                <div class="event">
+                  <h5>Senior Software Engineer</h5>
+                  <div class="eventDetail">
+                    <p>
+                    </p>
+                    <h6>Envato</h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eventsContent">
+                <h5><span>Jul 2014 - Apr 2019</span></h5>
+                <div class="event">
+                  <h5>Software Engineer</h5>
+                  <div class="eventDetail">
+                    <p>
+                    </p>
+                    <h6>Envato</h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eventsContent">
+                <h5><span>Feb 2013 - Jul 2014</span></h5>
+                <div class="event">
+                  <h5>Junior Software Engineer</h5>
+                  <div class="eventDetail">
+                    <p>
+                    </p>
+                    <h6>Envato</h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eventsContent">
+                <h5><span>Feb 2012 - Feb 2013</span></h5>
+                <div class="event">
+                  <h5>Design Engineer</h5>
+                  <div class="eventDetail">
+                    <p>
+                    </p>
+                    <h6>Unico</h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eventsContent">
+                <h5><span>Feb 2011 - Feb 2012</span></h5>
+                <div class="event">
+                  <h5>Graduate</h5>
+                  <div class="eventDetail">
+                    <p>
+                    </p>
+                    <h6>Unico</h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eventsContent">
+                <h5><span>Nov 2005 - Feb 2011</span></h5>
+                <div class="event">
+                  <h5>Director</h5>
+                  <div class="eventDetail">
+                    <p>
+                    </p>
+                    <h6>HACD Design</h6>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- End Timeline Employment Info Container -->
+          </div>
+        </div>
+        <!-- End Employment Info -->
+
+        <!-- Education Info -->
+        <div class="eight columns row">
+          <div class="block">
+            <div class="block_title">
+              <h4><span>Education</span></h4>
+            </div>
+
+            <!-- Timeline Education Info Container -->
+            <div class="eventsContainer clearfix">
+
+              <div class="eventsContent">
+                <h5><span>Feb 2006 - Dec 2010</span></h5>
+                <div class="event">
+                  <h5>Bachelor of Computer Science with Distinction</h5>
+                  <div class="eventDetail">
+                    <p>
+                      GPA of 3.83 (High Distinction).
+                    </p>
+                    <h6>RMIT University</h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eventsContent">
+                <h5><span>Feb 2006 - Dec 2010</span></h5>
+                <div class="event">
+                  <h5>Bachelor of Engineering (Computer and Network Engineering) with Honors 1st Class</h5>
+                  <div class="eventDetail">
+                    <p>
+                      GPA of 3.77 (High Distinction).
+                    </p>
+                    <p>
+                      Awarded Platinum Prize for final year Design project: Motion Interpretation Mouse Engine (MIME).
+                    </p>
+                    <h6>RMIT University</h6>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- Timeline Education Info Container -->
+          </div>
+        </div>
+        <!-- End Education Info -->
+      </div>
+    </section>
+
+    <!-- Portfolio Subpage =========================================== -->
+    <section class="slide" id="portfolio" data-slide="4">
+      <div class="container">
+        <div class="sixteen columns">
+          <div class="subpage_title">
+            <h2><span>Portfolio</span></h2>
+          </div>
+        </div>
+
+        <div class="container sixteen columns row">
+          <!-- Portfolio -->
+          <div class="block">
+            <ul id="og-grid" class="og-grid">
+
+              <li>
+                <a href="https://elements.envato.com" data-largesrc="images/portfolio/envatoelements.jpg"
+                  data-title="Envato Elements"
+                  data-description="Subscription service for stock videos, music, photos and graphics">
+                  <img src="images/portfolio/envatoelements.jpg" alt="Envato Elements" />
+                </a>
+              </li>
+
+              <li>
+                <a href="https://themeforest.net" data-largesrc="images/portfolio/themeforest.jpg"
+                  data-title="Envato Marketplace - ThemeForest"
+                  data-description="Digital marketplace for wordpress themes and website templates">
+                  <img src="images/portfolio/themeforest.jpg" alt="ThemeForest" />
+                </a>
+              </li>
+
+              <li>
+                <a href="https://codecanyon.net" data-largesrc="images/portfolio/codecanyon.jpg"
+                  data-title="Envato Marketplace - CodeCanyon"
+                  data-description="Digital marketplace for plugins and code">
+                  <img src="images/portfolio/codecanyon.jpg" alt="CodeCanyon" />
+                </a>
+              </li>
+
+              <li>
+                <a href="https://videohive.net" data-largesrc="images/portfolio/videohive.jpg"
+                  data-title="Envato Marketplace - VideoHive"
+                  data-description="Digital marketplace for stock footage and video effects">
+                  <img src="images/portfolio/videohive.jpg" alt="VideoHive" />
+                </a>
+              </li>
+
+              <li>
+                <a href="https://audiojungle.net" data-largesrc="images/portfolio/audiojungle.jpg"
+                  data-title="Envato Marketplace - AudioJungle"
+                  data-description="Digital marketplace for royalty free music and audio">
+                  <img src="images/portfolio/audiojungle.jpg" alt="AudioJungle" />
+                </a>
+              </li>
+
+              <li>
+                <a href="https://graphicriver.net" data-largesrc="images/portfolio/graphicriver.jpg"
+                  data-title="Envato Marketplace - GraphicRiver"
+                  data-description="Digital marketplace for fonts, logos and icons">
+                  <img src="images/portfolio/graphicriver.jpg" alt="GraphicRiver" />
+                </a>
+              </li>
+
+              <li>
+                <a href="https://photodune.net" data-largesrc="images/portfolio/photodune.jpg"
+                  data-title="Envato Marketplace - PhotoDune"
+                  data-description="Digital marketplace for royalty free stock images and photos">
+                  <img src="images/portfolio/photodune.jpg" alt="PhotoDune" />
+                </a>
+              </li>
+
+              <li>
+                <a href="https://3docean.net" data-largesrc="images/portfolio/3docean.jpg"
+                  data-title="Envato Marketplace - 3D Ocean"
+                  data-description="Digital marketplace for 3D files and CG textures">
+                  <img src="images/portfolio/3docean.jpg" alt="3D Ocean" />
+                </a>
+              </li>
+
+              <li>
+                <a href="https://realimage.com.au" data-largesrc="images/portfolio/realimage.jpg"
+                  data-title="Realimage Photography"
+                  data-description="Provider of premium boutique real estate services">
+                  <img src="images/portfolio/realimage.jpg" alt="Realimage Photography" />
+                </a>
+              </li>
+
+            </ul>
+          </div>
+          <!-- End Portfolio -->
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <!-- End Wrapper -->
+
+  <!-- jQuery library -->
+  <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+  <script src="js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+  <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+  <!-- Portfolio Grid -->
+  <script src="js/grid.js"></script>
+  <script>
+    $(function () {
+      Grid.init();
+    });
+  </script>
+  <!-- Stellar Javascript file -->
+  <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+  <!-- qTip -->
+  <script src="js/jquery.qtip.min.js" type="text/javascript"></script>
+  <!-- Lightbox2 -->
+  <script src="js/lightbox.js"></script>
+
+  <!-- QTRotator -->
+  <script src="js/jquery.cbpQTRotator.min.js"></script>
+  <script>
+    $(function () {
+      /*
+      - how to call the plugin:
+      $( selector ).cbpQTRotator( [options] );
+      - options:
+      {
+        // default transition speed (ms)
+        speed : 700,
+        // default transition easing
+        easing : 'ease',
+        // rotator interval (ms)
+        interval : 8000
+      }
+      - destroy:
+      $( selector ).cbpQTRotator( 'destroy' );
+      */
+
+      $('#cbp-qtrotator').cbpQTRotator({ interval: 15000 });
+
+    });
+  </script>
+
+  <!-- js for Preview -->
+  <script src="preview/jquery.slidePanel.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#style_switcher_panel').slidePanel({
+        triggerName: '#trigger',
+        triggerTopPos: '100px',
+        panelTopPos: '100px'
+      });
+
+      $('.precy').click(function () {
+        var bg = $(this).attr('title');
+        $('body').css("background-image", bg)
+      });
+    });
+  </script>
+
+  <!-- JS Settings -->
+  <script src="js/main.js"></script>
+
+  <!--[if lt IE 7]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+    <![endif]-->
+  <!--[if lt IE 8]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+    <![endif]-->
+  <!--[if lt IE 9]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <![endif]-->
+
+  <!-- End Document ================================================== -->
+</body>
+
 </html>
