@@ -37,7 +37,7 @@
       }
 
       #content ul li {
-        margin: 0.25em 0;
+        margin: 0.3em 0;
         padding-left: 25px;
         background-image: url("img/bullet-medium.png");
         background-repeat: no-repeat;
@@ -80,11 +80,7 @@
         margin-bottom: 10px;
       }
 
-      .employment,
-      .volunteering,
-      .education,
-      #int,
-      #ref {
+      .nobreak {
         page-break-inside: avoid;
       }
 
@@ -315,7 +311,7 @@
             <div class="well">
               <h2>SKILLS</h2>
               <div>
-                <div class="position">Software Development</div>
+                <div class="position nobreak">Software Development</div>
                 <div class="description">
                   <ul>
                     <li>17 years working with backend technologies, frontend technologies and relational databases.</li>
@@ -328,7 +324,7 @@
               <div class="spacer"></div>
 
               <div>
-                <div class="position">Technical Leadership</div>
+                <div class="position nobreak">Technical Leadership</div>
                 <div class="description">
                   <ul>
                     <li>
@@ -343,7 +339,7 @@
               <div class="spacer"></div>
 
               <div>
-                <div class="position">Mentoring</div>
+                <div class="position nobreak">Mentoring</div>
                 <div class="description">
                   <ul>
                     <li>
@@ -360,7 +356,7 @@
             <div class="well">
               <h2>ACHIEVEMENTS</h2>
 
-              <div class="employment">
+              <div class="employment nobreak">
                 <div class="company">Envato</div>
                 <div class="dates">Oct 2021 &#8212; Jun 2022</div>
                 <div class="position">Lead Engineer</div>
@@ -393,7 +389,7 @@
 
               <div class="spacer"></div>
 
-              <div class="employment">
+              <div class="employment nobreak">
                 <div class="company">Envato</div>
                 <div class="dates">Apr 2019 &#8212; Oct 2021</div>
                 <div class="position">Senior Software Engineer</div>
@@ -415,8 +411,7 @@
                       Generated a $1M/year line of business by leading and delivering the Enterprise on Envato Elements.
                     </li>
                     <li>
-                      Reduced tax liability by over $70K/month by leading and delivering sales tax compliance on Envato
-                      Elements.
+                      Reduced tax liability by $70K/month by leading and delivering tax compliance on Envato Elements.
                     </li>
                     <li>
                       Decreased subscription cancellation rate by 17% by leading and delivering experiments that
@@ -428,6 +423,8 @@
 
               <div class="spacer"></div>
 
+              <!-- with nobreak on, this doesnt flow correctly -->
+              <!-- <div class="employment nobreak"> -->
               <div class="employment">
                 <div class="company">Envato</div>
                 <div class="dates">Jul 2014 &#8212; Apr 2019</div>
@@ -446,8 +443,7 @@
                       subscription management to Recurly's subscription platform.
                     </li>
                     <li>
-                      Reduced customer friction and increased revenue by implementing guest checkout on Envato
-                      Marketplace.
+                      Reduced friction and increased revenue by implementing guest checkout on Envato Marketplace.
                     </li>
                     <li>
                       Reduced refund risk by delivering a shared refunds model, where authors pay their share of an
@@ -461,9 +457,10 @@
                   </ul>
                 </div>
 
-                <div class="spacer"></div>
+                <!-- unfortunately, this sits on a pagebreak -->
+                <!-- <div class="spacer"></div> -->
 
-                <div class="employment">
+                <div class="employment nobreak">
                   <div class="company">Envato</div>
                   <div class="dates">Feb 2013 &#8212; Feb 2014</div>
                   <div class="position">Junior Software Engineer</div>
@@ -488,7 +485,7 @@
 
               <div class="spacer"></div>
 
-              <div class="employment">
+              <div class="employment nobreak">
                 <div class="company">Unico</div>
                 <div class="dates">Feb 2011 &#8212; Feb 2012</div>
                 <div class="position">Design Engineer</div>
@@ -505,7 +502,7 @@
               </div>
               <div class="spacer"></div>
 
-              <div class="employment">
+              <div class="employment nobreak">
                 <div class="company">Unico</div>
                 <div class="dates">Feb 2010 &#8212; Feb 2011</div>
                 <div class="position">Design Engineer</div>
@@ -517,7 +514,7 @@
               </div>
             </div>
 
-            <div id="int" class="well">
+            <div id="int" class="well nobreak">
               <h2>INTERESTS</h2>
               <ul>
                 <li>Software development and web design.</li>
