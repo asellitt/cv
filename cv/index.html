@@ -14,15 +14,10 @@
         margin-right: 0mm;
       }
 
-      @media print {
-        .noprint {
-          display: none;
-        }
-      }
-
       body {
         font-size: 10pt;
         font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        background-color: #cccccc;
       }
 
       h2 {
@@ -139,6 +134,16 @@
 
       #achievements .position {
         font-weight: bold;
+      }
+
+      @media print {
+        body {
+          background-color: #ffffff;
+        }
+
+        .noprint {
+          display: none;
+        }
       }
     </style>
   </head>
