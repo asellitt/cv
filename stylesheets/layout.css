@@ -786,6 +786,10 @@ ul.personal-info .not_available {
   color: #ccc;
 }
 
+.eventDetail ul {
+  list-style: initial;
+}
+
 /* ===================================== 
 3.4 Portfolio Subpage
 ===================================== */
