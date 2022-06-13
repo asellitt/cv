@@ -8,7 +8,7 @@
 
       @page {
         size: a4 portrait;
-        margin-top: 10mm;
+        margin-top: 5mm;
         margin-bottom: 5mm;
         margin-left: 0mm;
         margin-right: 0mm;
@@ -52,6 +52,23 @@
         background-position: 0px 0px;
       }
 
+      footer {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+      #footerContent {
+        display: flex;
+        justify-content: space-between;
+        vertical-align: bottom;
+        max-width: 210mm;
+        margin: 0 auto;
+        padding: 0;
+        padding-right: 10mm;
+      }
+
       #wrapper {
         background-color: #cccccc;
       }
@@ -59,7 +76,6 @@
       #content {
         max-width: 210mm;
         background: #ffffff;
-        width: 100%;
         margin: 0 auto;
         padding: 0;
       }
@@ -81,7 +97,7 @@
         margin-bottom: 10px;
       }
 
-      .nobreak {
+      .noBreak {
         page-break-inside: avoid;
       }
 
@@ -143,13 +159,41 @@
         font-weight: bold;
       }
 
+      .footer {
+        display: none;
+      }
+
+      .footerContent {
+        display: flex;
+        justify-content: space-between;
+        vertical-align: bottom;
+        max-width: 210mm;
+        margin: 0 auto;
+      }
+
+      .page1 {
+        padding-top: 7mm;
+      }
+
+      .page2 {
+        padding-top: 3mm;
+      }
+
+      .page3 {
+        padding-top: 174mm;
+      }
+
       @media print {
         body {
           background-color: #ffffff;
         }
 
-        .noprint {
+        .noPrint {
           display: none;
+        }
+
+        .footer {
+          display: block;
         }
       }
     </style>
@@ -158,7 +202,7 @@
   <body>
     <div id="wrapper">
       <div id="content">
-        <div id="contact">
+        <div id="contact" class="well">
           <h1>ANTHONY SELLITTI</h1>
           <h5 id="contactNumber"></h5>
           <h5 id="emailAddress"></h5>
@@ -231,7 +275,7 @@
         <div id="skills" class="well">
           <h2>SKILLS</h2>
           <div>
-            <div class="skill nobreak">Software Development</div>
+            <div class="skill noBreak">Software Development</div>
             <div class="description">
               <ul>
                 <li>17 years working with backend technologies, frontend technologies and relational databases.</li>
@@ -244,7 +288,7 @@
           <div class="spacer"></div>
 
           <div>
-            <div class="skill nobreak">Technical Leadership</div>
+            <div class="skill noBreak">Technical Leadership</div>
             <div class="description">
               <ul>
                 <li>
@@ -259,7 +303,7 @@
           <div class="spacer"></div>
 
           <div>
-            <div class="skill nobreak">Mentoring</div>
+            <div class="skill noBreak">Mentoring</div>
             <div class="description">
               <ul>
                 <li>
@@ -275,7 +319,7 @@
           <div class="spacer"></div>
 
           <div>
-            <div class="skill nobreak">Communication</div>
+            <div class="skill noBreak">Communication</div>
             <div class="description">
               <ul>
                 <li>
@@ -288,10 +332,17 @@
           </div>
         </div>
 
+        <div class="footer noBreak">
+          <div class="footerContent page1">
+            <div class="name">Anthony Sellitti</div>
+            <div class="page">Page 1 of 3</div>
+          </div>
+        </div>
+
         <div id="achievements" class="well">
           <h2>ACHIEVEMENTS</h2>
 
-          <div class="employment nobreak">
+          <div class="employment noBreak">
             <div class="company">Envato</div>
             <div class="dates">Oct 2021 &#8212; Jun 2022</div>
             <div class="position">Lead Engineer</div>
@@ -324,7 +375,7 @@
 
           <div class="spacer"></div>
 
-          <div class="employment nobreak">
+          <div class="employment noBreak">
             <div class="company">Envato</div>
             <div class="dates">Apr 2019 &#8212; Oct 2021</div>
             <div class="position">Senior Software Engineer</div>
@@ -355,7 +406,7 @@
 
           <div class="spacer"></div>
 
-          <div class="employment nobreak">
+          <div class="employment noBreak">
             <div class="company">Envato</div>
             <div class="dates">Jul 2014 &#8212; Apr 2019</div>
             <div class="position">Software Engineer</div>
@@ -383,7 +434,7 @@
 
             <div class="spacer"></div>
 
-            <div class="employment nobreak">
+            <div class="employment noBreak">
               <div class="company">Envato</div>
               <div class="dates">Feb 2013 &#8212; Feb 2014</div>
               <div class="position">Junior Software Engineer</div>
@@ -405,9 +456,16 @@
             </div>
           </div>
 
-          <div class="spacer noprint"></div>
+          <div class="footer">
+            <div class="footerContent page2">
+              <div class="name">Anthony Sellitti</div>
+              <div class="page">Page 2 of 3</div>
+            </div>
+          </div>
 
-          <div class="employment nobreak">
+          <div class="spacer noPrint"></div>
+
+          <div class="employment noBreak">
             <div class="company">Unico</div>
             <div class="dates">Feb 2011 &#8212; Feb 2012</div>
             <div class="position">Design Engineer</div>
@@ -425,7 +483,7 @@
 
           <div class="spacer"></div>
 
-          <div class="employment nobreak">
+          <div class="employment noBreak">
             <div class="company">Unico</div>
             <div class="dates">Feb 2010 &#8212; Feb 2011</div>
             <div class="position">Design Engineer</div>
@@ -437,7 +495,7 @@
           </div>
         </div>
 
-        <div id="interests" class="well nobreak">
+        <div id="interests" class="well noBreak">
           <h2>INTERESTS</h2>
           <ul>
             <li>Software development and web design.</li>
@@ -447,6 +505,13 @@
             <li>Digital and analog gaming.</li>
             <li>Woodworking.</li>
           </ul>
+        </div>
+
+        <div class="footer noBreak">
+          <div class="footerContent page3">
+            <div class="name">Anthony Sellitti</div>
+            <div class="page">Page 3 of 3</div>
+          </div>
         </div>
       </div>
     </div>
