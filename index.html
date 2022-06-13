@@ -1,507 +1,564 @@
 ﻿<html>
+  <head>
+    <!-- Basic Page Needs ================================================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Anthony Sellitti</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<head>
+    <!-- CSS ================================================== -->
+    <link rel="stylesheet" href="stylesheets/skeleton.css" />
+    <!-- qTip CSS file -->
+    <link rel="stylesheet" href="stylesheets/jquery.qtip.css" />
+    <!-- Lightbox2 CSS file -->
+    <link href="stylesheets/lightbox.css" rel="stylesheet" />
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="stylesheets/layout.css" />
 
-  <!-- Basic Page Needs ================================================== -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <title>Anthony Sellitti</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <!-- Favicons ================================================== -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
 
-  <!-- CSS ================================================== -->
-  <link rel="stylesheet" href="stylesheets/skeleton.css">
-  <!-- qTip CSS file -->
-  <link rel="stylesheet" href="stylesheets/jquery.qtip.css">
-  <!-- Lightbox2 CSS file -->
-  <link href="stylesheets/lightbox.css" rel="stylesheet" />
-  <!-- Main Styles -->
-  <link rel="stylesheet" href="stylesheets/layout.css">
+    <!-- JavaScript ================================================== -->
+    <!-- Modernizr -->
+    <script src="js/modernizr.custom.js" type="text/javascript"></script>
 
-  <!-- Favicons ================================================== -->
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-
-  <!-- JavaScript ================================================== -->
-  <!-- Modernizr -->
-  <script src="js/modernizr.custom.js" type="text/javascript"></script>
-
-
-  <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+  </head>
 
-</head>
+  <body>
+    <header>
+      <section class="menu">
+        <div class="container">
+          <div class="sixteen columns">
+            <!-- Navigation Menu -->
+            <div id="nav">
+              <ul class="navigation">
+                <li data-slide="1">
+                  <h5>Home</h5>
+                </li>
 
-<body>
+                <li data-slide="2">
+                  <h5>About Me</h5>
+                </li>
 
-  <header>
+                <li data-slide="3">
+                  <h5>Experience</h5>
+                </li>
 
-    <section class="menu">
-      <div class="container">
-        <div class="sixteen columns">
-          <!-- Navigation Menu -->
-          <div id="nav">
-            <ul class="navigation">
-              <li data-slide="1">
-                <h5>Home</h5>
-              </li>
-
-              <li data-slide="2">
-                <h5>About Me</h5>
-              </li>
-
-              <li data-slide="3">
-                <h5>Experience</h5>
-              </li>
-
-              <li data-slide="4">
-                <h5>Portfolio</h5>
-              </li>
-            </ul>
-          </div>
-          <!-- Navigation Menu / End -->
-        </div>
-      </div>
-    </section>
-  </header>
-
-  <div class="wrapper">
-    <!-- Home Subpage =========================================== -->
-    <section class="slide" id="home" data-slide="1">
-      <div class="container">
-        <div class="sixteen columns">
-
-          <!-- Main Photo -->
-          <div class="portrait">
-            <img src="images/my_photo.jpg" alt="" class="tframe_1" />
-          </div>
-          <!-- End Main Photo -->
-
-          <!-- Main Title. -->
-          <div class="main_title">
-            <h1>Anthony Sellitti</h1>
-            <h4>Software Engineer</h4>
-          </div>
-          <!-- End Main Title -->
-
-          <!-- Social Icons. -->
-          <div class="social_icons">
-            <ul class="social">
-              <li>
-                <a class="tip" href="https://www.linkedin.com/in/asellitt" title="Linked In">
-                  <img src="images/social/linkedin.png" alt="" />
-                </a>
-              </li>
-              <li>
-                <a class="tip" href="https://github.com/asellitt/" title="Github">
-                  <img src="images/social/github.png" alt="" />
-                </a>
-              </li>
-              <li>
-                <a class="tip" href="https://twitter.com/asellitt" title="Twitter">
-                  <img src="images/social/twitter.png" alt="" />
-                </a>
-              </li>
-              <li>
-                <a class="tip" href="cv/index.html" title="CV">
-                  <img src="images/social/resume.png" alt="" />
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- End Social Icons -->
-
-        </div>
-
-      </div>
-    </section>
-    <!-- End Home Subpage -->
-
-    <!-- About Me Subpage =========================================== -->
-    <section class="slide" id="about_me" data-slide="2">
-      <div class="container">
-
-        <!-- Subpage Title -->
-        <div class="sixteen columns">
-          <div class="subpage_title">
-            <h2><span>About Me</span></h2>
-          </div>
-        </div>
-        <!-- End Subpage Title -->
-
-
-        <div class="eight columns">
-          <!-- About Me Main Information -->
-          <div class="block">
-            <h4>I'm a Software Engineer from Melbourne.</h4>
-            <p>
-              Over the the last decade, I've worked on some of Australia's largest online marketplaces, supporting over
-              1.2 billion requests per month. I've lead and delivered initiatives which have contributed to over 1
-              billion dollars of community earnings, and helped hundreds of thousands of customers find the assets they
-              need.
-            </p>
-          </div>
-          <!-- End About Me Main Information -->
-
-          <!-- My Skills Information -->
-          <div class="block">
-            <div class="skill_info clearfix">
-              <div class="block_title">
-                <h4><span>My Skills</span></h4>
-              </div>
-              <ul id="chart">
-                <li class="skill w100"><span>Problem Solving</span></li>
-                <li class="skill w90"><span>Technical Leadership</span></li>
-                <li class="skill w60"><span>Mentoring</span></li>
-                <li class="skill w100"><span>Backend Development</span></li>
-                <li class="skill w80"><span>Frontend Development</span></li>
-                <li class="skill w90"><span>Continuous Integration and Continuous Delivery</span></li>
+                <li data-slide="4">
+                  <h5>Portfolio</h5>
+                </li>
               </ul>
             </div>
-          </div>
-          <!-- End My Skills Information -->
-        </div>
-
-        <div class="eight columns">
-          <!-- Personal info -->
-          <div class="block">
-            <div class="block_title">
-              <h4><span>Personal Info</span></h4>
-            </div>
-            <ul class="personal-info">
-              <li><span class="title">Name</span><span class="value">Anthony Sellitti</span></li>
-              <li><span class="title">Address</span><span class="value">Melbourne, Australia</span></li>
-              <li><span class="title">Employed</span><span class="value available">Looking for new opportunities</span>
-              </li>
-              <!-- if Freelance not available: change class to not_available (then color text = Red) -->
-            </ul>
-          </div>
-          <!-- End Personal Info -->
-
-          <!-- Testimonials info -->
-          <div class="block">
-            <div class="block_title">
-              <h4><span>Testimonials</span></h4>
-            </div>
-
-            <div id="cbp-qtrotator" class="cbp-qtrotator">
-
-              <div class="cbp-qtcontent">
-                <img src="images/testimonials/lindsay.png" alt="Lindsay" />
-                <blockquote>
-                  <p>
-                    Anthony gets results. In our time working together, I saw him grow from a circumspect mid-level
-                    developer to a highly capable, high impact senior developer. He brought significant financial
-                    systems expertise to building and scaling the Elements subscription flow – the main revenue
-                    generating flow of the product. He cares about his craft, and takes the long term view whenever
-                    writing code. He actively works to improve the teams' ways of working, and doesn't hesitate to tell
-                    it like it is. Working with Anthony is a breath of fresh air, and I can't wait to do so again.
-                  </p>
-                  <footer>Lindsay Holmwood</footer>
-                </blockquote>
-              </div>
-
-              <div class="cbp-qtcontent">
-                <img src="images/testimonials/emily.png" alt="Emily" />
-                <blockquote>
-                  <p>
-                    Anthony is an absolute superstar, and I've so enjoyed working with him. He brings with him such a
-                    wealth of knowledge and context, and an enthusiasm for just getting shit done. He feels comfortable
-                    to ask questions that challenge assumptions and is similarly comfortable having questions asked of
-                    him. Anthony steps up and helps when needed, even when he's thrown a curve ball or two!
-                  </p>
-                  <footer>Emily Koop</footer>
-                </blockquote>
-              </div>
-            </div>
-
-          </div>
-          <!-- End Testimonials Info -->
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Resume Subpage =========================================== -->
-    <section class="slide" id="resume" data-slide="3">
-      <div class="container">
-        <div class="sixteen columns">
-          <div class="subpage_title">
-            <h2><span>Experience</span></h2>
+            <!-- Navigation Menu / End -->
           </div>
         </div>
+      </section>
+    </header>
 
-        <!-- Employment Info -->
-        <div class="eight columns row">
-          <div class="block">
-            <div class="block_title">
-              <h4><span>Employment</span></h4>
+    <div class="wrapper">
+      <!-- Home Subpage =========================================== -->
+      <section class="slide" id="home" data-slide="1">
+        <div class="container">
+          <div class="sixteen columns">
+            <!-- Main Photo -->
+            <div class="portrait">
+              <img src="images/my_photo.jpg" alt="" class="tframe_1" />
             </div>
+            <!-- End Main Photo -->
 
-            <!-- Timeline Employment Info Container -->
-            <div class="eventsContainer clearfix">
-
-              <div class="eventsContent">
-                <h5><span>Oct 2021 - Jun 2022</span></h5>
-                <div class="event">
-                  <h5>Lead Engineer</h5>
-                  <div class="eventDetail">
-                    <p>
-                    </p>
-                    <h6>Envato</h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="eventsContent">
-                <h5><span>Apr 2019 - Oct 2021</span></h5>
-                <div class="event">
-                  <h5>Senior Software Engineer</h5>
-                  <div class="eventDetail">
-                    <p>
-                    </p>
-                    <h6>Envato</h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="eventsContent">
-                <h5><span>Jul 2014 - Apr 2019</span></h5>
-                <div class="event">
-                  <h5>Software Engineer</h5>
-                  <div class="eventDetail">
-                    <p>
-                    </p>
-                    <h6>Envato</h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="eventsContent">
-                <h5><span>Feb 2013 - Jul 2014</span></h5>
-                <div class="event">
-                  <h5>Junior Software Engineer</h5>
-                  <div class="eventDetail">
-                    <p>
-                    </p>
-                    <h6>Envato</h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="eventsContent">
-                <h5><span>Feb 2012 - Feb 2013</span></h5>
-                <div class="event">
-                  <h5>Design Engineer</h5>
-                  <div class="eventDetail">
-                    <p>
-                    </p>
-                    <h6>Unico</h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="eventsContent">
-                <h5><span>Feb 2011 - Feb 2012</span></h5>
-                <div class="event">
-                  <h5>Graduate</h5>
-                  <div class="eventDetail">
-                    <p>
-                    </p>
-                    <h6>Unico</h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="eventsContent">
-                <h5><span>Nov 2005 - Feb 2011</span></h5>
-                <div class="event">
-                  <h5>Director</h5>
-                  <div class="eventDetail">
-                    <p>
-                    </p>
-                    <h6>HACD Design</h6>
-                  </div>
-                </div>
-              </div>
-
+            <!-- Main Title. -->
+            <div class="main_title">
+              <h1>Anthony Sellitti</h1>
+              <h4>Software Engineer</h4>
             </div>
-            <!-- End Timeline Employment Info Container -->
+            <!-- End Main Title -->
+
+            <!-- Social Icons. -->
+            <div class="social_icons">
+              <ul class="social">
+                <li>
+                  <a class="tip" href="https://www.linkedin.com/in/asellitt" title="Linked In">
+                    <img src="images/social/linkedin.png" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a class="tip" href="https://github.com/asellitt/" title="Github">
+                    <img src="images/social/github.png" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a class="tip" href="https://twitter.com/asellitt" title="Twitter">
+                    <img src="images/social/twitter.png" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a class="tip" href="cv/index.html" title="CV">
+                    <img src="images/social/resume.png" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- End Social Icons -->
           </div>
         </div>
-        <!-- End Employment Info -->
+      </section>
+      <!-- End Home Subpage -->
 
-        <!-- Education Info -->
-        <div class="eight columns row">
-          <div class="block">
-            <div class="block_title">
-              <h4><span>Education</span></h4>
+      <!-- About Me Subpage =========================================== -->
+      <section class="slide" id="about_me" data-slide="2">
+        <div class="container">
+          <!-- Subpage Title -->
+          <div class="sixteen columns">
+            <div class="subpage_title">
+              <h2><span>About Me</span></h2>
             </div>
+          </div>
+          <!-- End Subpage Title -->
 
-            <!-- Timeline Education Info Container -->
-            <div class="eventsContainer clearfix">
+          <div class="eight columns">
+            <!-- About Me Main Information -->
+            <div class="block" style="min-height: 150px">
+              <h4>I'm a Software Engineer from Melbourne.</h4>
+              <p>
+                Over the the last decade, I've worked on some of Australia's largest online marketplaces, supporting
+                over 1.2 billion requests per month. I've lead and delivered initiatives which have contributed to over
+                1 billion dollars of community earnings, and helped hundreds of thousands of customers find the assets
+                they need.
+              </p>
+            </div>
+            <!-- End About Me Main Information -->
 
-              <div class="eventsContent">
-                <h5><span>Feb 2006 - Dec 2010</span></h5>
-                <div class="event">
-                  <h5>Bachelor of Computer Science with Distinction</h5>
-                  <div class="eventDetail">
+            <!-- My Skills Information -->
+            <div class="block" style="min-height: 290px">
+              <div class="skill_info clearfix">
+                <div class="block_title">
+                  <h4><span>My Skills</span></h4>
+                </div>
+                <ul id="chart">
+                  <li class="skill w100"><span>Problem Solving</span></li>
+                  <li class="skill w90"><span>Technical Leadership</span></li>
+                  <li class="skill w60"><span>Mentoring</span></li>
+                  <li class="skill w100"><span>Backend Development</span></li>
+                  <li class="skill w80"><span>Frontend Development</span></li>
+                  <li class="skill w90"><span>Continuous Integration and Continuous Delivery</span></li>
+                </ul>
+              </div>
+            </div>
+            <!-- End My Skills Information -->
+          </div>
+
+          <div class="eight columns">
+            <!-- Personal info -->
+            <div class="block" style="min-height: 150px">
+              <div class="block_title">
+                <h4><span>Personal Info</span></h4>
+              </div>
+              <ul class="personal-info">
+                <li><span class="title">Name</span><span class="value">Anthony Sellitti</span></li>
+                <li><span class="title">Address</span><span class="value">Melbourne, Australia</span></li>
+                <li>
+                  <span class="title">Employed</span><span class="value available">Looking for new opportunities</span>
+                </li>
+                <!-- if Freelance not available: change class to not_available (then color text = Red) -->
+              </ul>
+            </div>
+            <!-- End Personal Info -->
+
+            <!-- Testimonials info -->
+            <div class="block" style="min-height: 290px">
+              <div class="block_title">
+                <h4><span>Testimonials</span></h4>
+              </div>
+
+              <div id="cbp-qtrotator" class="cbp-qtrotator">
+                <div class="cbp-qtcontent">
+                  <img src="images/testimonials/lindsay.png" alt="Lindsay" />
+                  <blockquote>
                     <p>
-                      GPA of 3.83 (High Distinction).
+                      Anthony gets results. In our time working together, I saw him grow from a circumspect mid-level
+                      developer to a highly capable, high impact senior developer. He brought significant financial
+                      systems expertise to building and scaling the Elements subscription flow – the main revenue
+                      generating flow of the product. He cares about his craft, and takes the long term view whenever
+                      writing code. He actively works to improve the teams' ways of working, and doesn't hesitate to
+                      tell it like it is. Working with Anthony is a breath of fresh air, and I can't wait to do so
+                      again.
                     </p>
-                    <h6>RMIT University</h6>
+                    <footer>Lindsay Holmwood, Senior Engineering Manager</footer>
+                  </blockquote>
+                </div>
+
+                <div class="cbp-qtcontent">
+                  <img src="images/testimonials/emily.png" alt="Emily" />
+                  <blockquote>
+                    <p>
+                      Anthony is an absolute superstar, and I've so enjoyed working with him. He brings with him such a
+                      wealth of knowledge and context, and an enthusiasm for just getting shit done. He feels
+                      comfortable to ask questions that challenge assumptions and is similarly comfortable having
+                      questions asked of him. Anthony steps up and helps when needed, even when he's thrown a curve ball
+                      or two!
+                    </p>
+                    <footer>Emily Koop, Product Manager</footer>
+                  </blockquote>
+                </div>
+
+                <div class="cbp-qtcontent">
+                  <img src="images/testimonials/2.jpg" alt="2" />
+                  <blockquote>
+                    <p>
+                      Anthony has an outstanding ability to go above and beyond with whatever he's working on. He thinks
+                      critically about the work we're doing and often finds ways to improve it, or raises questions
+                      which no one else had thought of. He genuinely makes the code bases better for everyone to work
+                      with.
+                    </p>
+                    <p>
+                      In addition, Anthony is <i>always</i> willing to jump onto work that needs to be done, and
+                      rearrange his priorities when things pop up. He supports his teammates happily and is the kind of
+                      guy you know has your back if you need it.
+                    </p>
+                    <footer>Engineering Manager</footer>
+                  </blockquote>
+                </div>
+
+                <div class="cbp-qtcontent">
+                  <img src="images/testimonials/1.jpg" alt="1" />
+                  <blockquote>
+                    <p>
+                      From a technical perspective, Anthony continues to broaden his horizons and now has a heap of
+                      ownership over both the front and back ends of Elements systems. He makes sure he has a good
+                      understanding of things in order to do his job and then patiently explains it to other people when
+                      needed.
+                    </p>
+                    <footer>Lead Engineer</footer>
+                  </blockquote>
+                </div>
+
+                <div class="cbp-qtcontent">
+                  <img src="images/testimonials/2.jpg" alt="2" />
+                  <blockquote>
+                    <p>
+                      Anthony is awesome. He's super passionate about his work and an absolute joy to work with. He
+                      writes high quality code with an emphasis on readability and maintainability. He's also really
+                      good about making sure that anything he works on has appropriate test coverage and up-to-date
+                      documentation.
+                    </p>
+                    <p>
+                      Anthony is also great at jumping on important time-sensitive tasks and following through with them
+                      to completion, even when they turn out to be more challenging than anticipated.
+                    </p>
+                    <footer>Software Engineer</footer>
+                  </blockquote>
+                </div>
+
+                <div class="cbp-qtcontent">
+                  <img src="images/testimonials/2.jpg" alt="2" />
+                  <blockquote>
+                    <p>
+                      Anthony seems to just jump on problems when they happen. I don't often work with him directly but
+                      he's usually keen to help out whenever something comes up. The times I have worked with him
+                      directly have always been productive and enjoyable.
+                    </p>
+                    <footer>Data Analytics Specialist</footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <!-- End Testimonials Info -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Resume Subpage =========================================== -->
+      <section class="slide" id="resume" data-slide="3">
+        <div class="container">
+          <div class="sixteen columns">
+            <div class="subpage_title">
+              <h2><span>Experience</span></h2>
+            </div>
+          </div>
+
+          <!-- Employment Info -->
+          <div class="eight columns row">
+            <div class="block">
+              <div class="block_title">
+                <h4><span>Employment</span></h4>
+              </div>
+
+              <!-- Timeline Employment Info Container -->
+              <div class="eventsContainer clearfix">
+                <div class="eventsContent">
+                  <h5><span>Oct 2021 - Jun 2022</span></h5>
+                  <div class="event">
+                    <h5>Lead Engineer</h5>
+                    <div class="eventDetail">
+                      <p></p>
+                      <h6>Envato</h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="eventsContent">
+                  <h5><span>Apr 2019 - Oct 2021</span></h5>
+                  <div class="event">
+                    <h5>Senior Software Engineer</h5>
+                    <div class="eventDetail">
+                      <p></p>
+                      <h6>Envato</h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="eventsContent">
+                  <h5><span>Jul 2014 - Apr 2019</span></h5>
+                  <div class="event">
+                    <h5>Software Engineer</h5>
+                    <div class="eventDetail">
+                      <p></p>
+                      <h6>Envato</h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="eventsContent">
+                  <h5><span>Feb 2013 - Jul 2014</span></h5>
+                  <div class="event">
+                    <h5>Junior Software Engineer</h5>
+                    <div class="eventDetail">
+                      <p></p>
+                      <h6>Envato</h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="eventsContent">
+                  <h5><span>Feb 2012 - Feb 2013</span></h5>
+                  <div class="event">
+                    <h5>Design Engineer</h5>
+                    <div class="eventDetail">
+                      <p></p>
+                      <h6>Unico</h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="eventsContent">
+                  <h5><span>Feb 2011 - Feb 2012</span></h5>
+                  <div class="event">
+                    <h5>Graduate</h5>
+                    <div class="eventDetail">
+                      <p></p>
+                      <h6>Unico</h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="eventsContent">
+                  <h5><span>Nov 2005 - Feb 2011</span></h5>
+                  <div class="event">
+                    <h5>Director</h5>
+                    <div class="eventDetail">
+                      <p></p>
+                      <h6>HACD Design</h6>
+                    </div>
                   </div>
                 </div>
               </div>
+              <!-- End Timeline Employment Info Container -->
+            </div>
+          </div>
+          <!-- End Employment Info -->
 
-              <div class="eventsContent">
-                <h5><span>Feb 2006 - Dec 2010</span></h5>
-                <div class="event">
-                  <h5>Bachelor of Engineering (Computer and Network Engineering) with Honors 1st Class</h5>
-                  <div class="eventDetail">
-                    <p>
-                      GPA of 3.77 (High Distinction).
-                    </p>
-                    <p>
-                      Awarded Platinum Prize for final year Design project: Motion Interpretation Mouse Engine (MIME).
-                    </p>
-                    <h6>RMIT University</h6>
+          <!-- Education Info -->
+          <div class="eight columns row">
+            <div class="block">
+              <div class="block_title">
+                <h4><span>Education</span></h4>
+              </div>
+
+              <!-- Timeline Education Info Container -->
+              <div class="eventsContainer clearfix">
+                <div class="eventsContent">
+                  <h5><span>Feb 2006 - Dec 2010</span></h5>
+                  <div class="event">
+                    <h5>Bachelor of Computer Science with Distinction</h5>
+                    <div class="eventDetail">
+                      <p>GPA of 3.83 (High Distinction).</p>
+                      <h6>RMIT University</h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="eventsContent">
+                  <h5><span>Feb 2006 - Dec 2010</span></h5>
+                  <div class="event">
+                    <h5>Bachelor of Engineering (Computer and Network Engineering) with Honors 1st Class</h5>
+                    <div class="eventDetail">
+                      <p>GPA of 3.77 (High Distinction).</p>
+                      <p>
+                        Awarded Platinum Prize for final year Design project: Motion Interpretation Mouse Engine (MIME).
+                      </p>
+                      <h6>RMIT University</h6>
+                    </div>
                   </div>
                 </div>
               </div>
-
+              <!-- Timeline Education Info Container -->
             </div>
-            <!-- Timeline Education Info Container -->
+          </div>
+          <!-- End Education Info -->
+        </div>
+      </section>
+
+      <!-- Portfolio Subpage =========================================== -->
+      <section class="slide" id="portfolio" data-slide="4">
+        <div class="container">
+          <div class="sixteen columns">
+            <div class="subpage_title">
+              <h2><span>Portfolio</span></h2>
+            </div>
+          </div>
+
+          <div class="container sixteen columns row">
+            <!-- Portfolio -->
+            <div class="block">
+              <ul id="og-grid" class="og-grid">
+                <li>
+                  <a
+                    href="https://elements.envato.com"
+                    data-largesrc="images/portfolio/envatoelements.jpg"
+                    data-title="Envato Elements"
+                    data-description="Subscription service for stock videos, music, photos and graphics"
+                  >
+                    <img src="images/portfolio/envatoelements.jpg" alt="Envato Elements" />
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://themeforest.net"
+                    data-largesrc="images/portfolio/themeforest.jpg"
+                    data-title="Envato Marketplace - ThemeForest"
+                    data-description="Digital marketplace for wordpress themes and website templates"
+                  >
+                    <img src="images/portfolio/themeforest.jpg" alt="ThemeForest" />
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://codecanyon.net"
+                    data-largesrc="images/portfolio/codecanyon.jpg"
+                    data-title="Envato Marketplace - CodeCanyon"
+                    data-description="Digital marketplace for plugins and code"
+                  >
+                    <img src="images/portfolio/codecanyon.jpg" alt="CodeCanyon" />
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://videohive.net"
+                    data-largesrc="images/portfolio/videohive.jpg"
+                    data-title="Envato Marketplace - VideoHive"
+                    data-description="Digital marketplace for stock footage and video effects"
+                  >
+                    <img src="images/portfolio/videohive.jpg" alt="VideoHive" />
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://audiojungle.net"
+                    data-largesrc="images/portfolio/audiojungle.jpg"
+                    data-title="Envato Marketplace - AudioJungle"
+                    data-description="Digital marketplace for royalty free music and audio"
+                  >
+                    <img src="images/portfolio/audiojungle.jpg" alt="AudioJungle" />
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://graphicriver.net"
+                    data-largesrc="images/portfolio/graphicriver.jpg"
+                    data-title="Envato Marketplace - GraphicRiver"
+                    data-description="Digital marketplace for fonts, logos and icons"
+                  >
+                    <img src="images/portfolio/graphicriver.jpg" alt="GraphicRiver" />
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://photodune.net"
+                    data-largesrc="images/portfolio/photodune.jpg"
+                    data-title="Envato Marketplace - PhotoDune"
+                    data-description="Digital marketplace for royalty free stock images and photos"
+                  >
+                    <img src="images/portfolio/photodune.jpg" alt="PhotoDune" />
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://3docean.net"
+                    data-largesrc="images/portfolio/3docean.jpg"
+                    data-title="Envato Marketplace - 3D Ocean"
+                    data-description="Digital marketplace for 3D files and CG textures"
+                  >
+                    <img src="images/portfolio/3docean.jpg" alt="3D Ocean" />
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://realimage.com.au"
+                    data-largesrc="images/portfolio/realimage.jpg"
+                    data-title="Realimage Photography"
+                    data-description="Provider of premium boutique real estate services"
+                  >
+                    <img src="images/portfolio/realimage.jpg" alt="Realimage Photography" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- End Portfolio -->
           </div>
         </div>
-        <!-- End Education Info -->
-      </div>
-    </section>
+      </section>
+    </div>
+    <!-- End Wrapper -->
 
-    <!-- Portfolio Subpage =========================================== -->
-    <section class="slide" id="portfolio" data-slide="4">
-      <div class="container">
-        <div class="sixteen columns">
-          <div class="subpage_title">
-            <h2><span>Portfolio</span></h2>
-          </div>
-        </div>
+    <!-- jQuery library -->
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <!-- Portfolio Grid -->
+    <script src="js/grid.js"></script>
+    <script>
+      $(function () {
+        Grid.init();
+      });
+    </script>
+    <!-- Stellar Javascript file -->
+    <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+    <!-- qTip -->
+    <script src="js/jquery.qtip.min.js" type="text/javascript"></script>
+    <!-- Lightbox2 -->
+    <script src="js/lightbox.js"></script>
 
-        <div class="container sixteen columns row">
-          <!-- Portfolio -->
-          <div class="block">
-            <ul id="og-grid" class="og-grid">
-
-              <li>
-                <a href="https://elements.envato.com" data-largesrc="images/portfolio/envatoelements.jpg"
-                  data-title="Envato Elements"
-                  data-description="Subscription service for stock videos, music, photos and graphics">
-                  <img src="images/portfolio/envatoelements.jpg" alt="Envato Elements" />
-                </a>
-              </li>
-
-              <li>
-                <a href="https://themeforest.net" data-largesrc="images/portfolio/themeforest.jpg"
-                  data-title="Envato Marketplace - ThemeForest"
-                  data-description="Digital marketplace for wordpress themes and website templates">
-                  <img src="images/portfolio/themeforest.jpg" alt="ThemeForest" />
-                </a>
-              </li>
-
-              <li>
-                <a href="https://codecanyon.net" data-largesrc="images/portfolio/codecanyon.jpg"
-                  data-title="Envato Marketplace - CodeCanyon"
-                  data-description="Digital marketplace for plugins and code">
-                  <img src="images/portfolio/codecanyon.jpg" alt="CodeCanyon" />
-                </a>
-              </li>
-
-              <li>
-                <a href="https://videohive.net" data-largesrc="images/portfolio/videohive.jpg"
-                  data-title="Envato Marketplace - VideoHive"
-                  data-description="Digital marketplace for stock footage and video effects">
-                  <img src="images/portfolio/videohive.jpg" alt="VideoHive" />
-                </a>
-              </li>
-
-              <li>
-                <a href="https://audiojungle.net" data-largesrc="images/portfolio/audiojungle.jpg"
-                  data-title="Envato Marketplace - AudioJungle"
-                  data-description="Digital marketplace for royalty free music and audio">
-                  <img src="images/portfolio/audiojungle.jpg" alt="AudioJungle" />
-                </a>
-              </li>
-
-              <li>
-                <a href="https://graphicriver.net" data-largesrc="images/portfolio/graphicriver.jpg"
-                  data-title="Envato Marketplace - GraphicRiver"
-                  data-description="Digital marketplace for fonts, logos and icons">
-                  <img src="images/portfolio/graphicriver.jpg" alt="GraphicRiver" />
-                </a>
-              </li>
-
-              <li>
-                <a href="https://photodune.net" data-largesrc="images/portfolio/photodune.jpg"
-                  data-title="Envato Marketplace - PhotoDune"
-                  data-description="Digital marketplace for royalty free stock images and photos">
-                  <img src="images/portfolio/photodune.jpg" alt="PhotoDune" />
-                </a>
-              </li>
-
-              <li>
-                <a href="https://3docean.net" data-largesrc="images/portfolio/3docean.jpg"
-                  data-title="Envato Marketplace - 3D Ocean"
-                  data-description="Digital marketplace for 3D files and CG textures">
-                  <img src="images/portfolio/3docean.jpg" alt="3D Ocean" />
-                </a>
-              </li>
-
-              <li>
-                <a href="https://realimage.com.au" data-largesrc="images/portfolio/realimage.jpg"
-                  data-title="Realimage Photography"
-                  data-description="Provider of premium boutique real estate services">
-                  <img src="images/portfolio/realimage.jpg" alt="Realimage Photography" />
-                </a>
-              </li>
-
-            </ul>
-          </div>
-          <!-- End Portfolio -->
-
-        </div>
-      </div>
-    </section>
-
-  </div>
-  <!-- End Wrapper -->
-
-  <!-- jQuery library -->
-  <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
-  <script src="js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
-  <script src="js/jquery-ui.min.js" type="text/javascript"></script>
-  <!-- Portfolio Grid -->
-  <script src="js/grid.js"></script>
-  <script>
-    $(function () {
-      Grid.init();
-    });
-  </script>
-  <!-- Stellar Javascript file -->
-  <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
-  <!-- qTip -->
-  <script src="js/jquery.qtip.min.js" type="text/javascript"></script>
-  <!-- Lightbox2 -->
-  <script src="js/lightbox.js"></script>
-
-  <!-- QTRotator -->
-  <script src="js/jquery.cbpQTRotator.min.js"></script>
-  <script>
-    $(function () {
-      /*
+    <!-- QTRotator -->
+    <script src="js/jquery.cbpQTRotator.min.js"></script>
+    <script>
+      $(function () {
+        /*
       - how to call the plugin:
       $( selector ).cbpQTRotator( [options] );
       - options:
@@ -517,25 +574,23 @@
       $( selector ).cbpQTRotator( 'destroy' );
       */
 
-      $('#cbp-qtrotator').cbpQTRotator({ interval: 15000 });
+        $("#cbp-qtrotator").cbpQTRotator({ interval: 15000 });
+      });
+    </script>
 
-    });
-  </script>
+    <!-- JS Settings -->
+    <script src="js/main.js"></script>
 
-  <!-- JS Settings -->
-  <script src="js/main.js"></script>
-
-  <!--[if lt IE 7]>
-    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+    <!--[if lt IE 7]>
+      <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
     <![endif]-->
-  <!--[if lt IE 8]>
-    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+    <!--[if lt IE 8]>
+      <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
     <![endif]-->
-  <!--[if lt IE 9]>
-    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <!--[if lt IE 9]>
+      <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
     <![endif]-->
 
-  <!-- End Document ================================================== -->
-</body>
-
+    <!-- End Document ================================================== -->
+  </body>
 </html>
